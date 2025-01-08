@@ -1104,20 +1104,20 @@ function transform(input) {
 
 function findValues(force, attributes) {
 
-    let attributeArray = [];
-    attributeArray = attributes;
+    // let attributeArray = [];
+    // attributeArray = attributes;
 
-    let attributeTemp = new Object()
+    // let attributeTemp = new Object()
 
     switch (force) {
         case 'Key':
-            attributeTemp = {}
+            
             break
         case 'Jar Lid':
-            attributeTemp = {
-                "Material": "",
-                "Size": ""
-            }
+            break
+        case '':
+            break
+        case '':
             break
         default:
 
