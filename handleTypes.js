@@ -1,4 +1,4 @@
-const handleType = {
+const handleTypesObject = {
     "Key": {
         "Male": {
             mean: 36.72,
@@ -97,7 +97,7 @@ const handleType = {
     },
     "Jar Lid": {
         "Knurled": {
-            "1.8 diameter": {
+            "1.8 inch diameter": {
                 "Male": {
                     mean: 39.83,
                     stdDev: 11.33
@@ -107,7 +107,7 @@ const handleType = {
                     stdDev: 10.18
                 }
             },
-            "2.6 diameter": {
+            "2.6 inch diameter": {
                 "Male": {
                     mean: 58.68,
                     stdDev: 13.28
@@ -117,7 +117,7 @@ const handleType = {
                     stdDev: 12.39
                 }
             },
-            "3.3 diameter": {
+            "3.3 inch diameter": {
                 "Male": {
                     mean: 74.61,
                     stdDev: 15.84
@@ -129,7 +129,7 @@ const handleType = {
             }
         },
         "Smooth": {
-            "1.8 diameter": {
+            "1.8 inch diameter": {
                 "Male": {
                     mean: 32.66,
                     stdDev: 10.09
@@ -139,7 +139,7 @@ const handleType = {
                     stdDev: 10.09
                 }
             },
-            "2.6 diameter": {
+            "2.6 inch diameter": {
                 "Male": {
                     mean: 50.01,
                     stdDev: 10.80
@@ -149,7 +149,7 @@ const handleType = {
                     stdDev: 12.39
                 }
             },
-            "3.3 diameter": {
+            "3.3 inch diameter": {
                 "Male": {
                     mean: 67.27,
                     stdDev: 15.22
@@ -163,7 +163,7 @@ const handleType = {
     },
     "Round Knob": {
         "Knurled": {
-            "0.125 diameter": {
+            "0.125 inch diameter": {
                 "Male": {
                     mean: 0.57,
                     stdDev: 0.19
@@ -173,7 +173,7 @@ const handleType = {
                     stdDev: 0.13
                 }
             },
-            "0.25 diameter": {
+            "0.25 inch diameter": {
                 "Male": {
                     mean: 1.22,
                     stdDev: 0.34
@@ -183,7 +183,7 @@ const handleType = {
                     stdDev: 0.22
                 }
             },
-            "0.5 diameter": {
+            "0.5 inch diameter": {
                 "Male": {
                     mean: 1.99,
                     stdDev: 0.84
@@ -193,7 +193,7 @@ const handleType = {
                     stdDev: 0.56
                 }
             },
-            "0.75 diameter": {
+            "0.75 inch diameter": {
                 "Male": {
                     mean: 5.81,
                     stdDev: 1.98
@@ -203,7 +203,7 @@ const handleType = {
                     stdDev: 1.32
                 }
             },
-            "1.0 diameter": {
+            "1.0 inch diameter": {
                 "Male": {
                     mean: 7.25,
                     stdDev: 2.22
@@ -213,7 +213,7 @@ const handleType = {
                     stdDev: 1.48
                 }
             },
-            "1.5 diameter": {
+            "1.5 inch diameter": {
                 "Male": {
                     mean: 9.17,
                     stdDev: 2.35
@@ -223,7 +223,7 @@ const handleType = {
                     stdDev: 1.56
                 }
             },
-            "2.0 diameter": {
+            "2.0 inch diameter": {
                 "Male": {
                     mean: 13.13,
                     stdDev: 3.05
@@ -233,7 +233,7 @@ const handleType = {
                     stdDev: 2.04
                 }
             },
-            "3.0 diameter": {
+            "3.0 inch diameter": {
                 "Male": {
                     mean: 29.85,
                     stdDev: 8.53
@@ -243,7 +243,7 @@ const handleType = {
                     stdDev: 5.68
                 }
             },
-            "4.0 diameter": {
+            "4.0 inch diameter": {
                 "Male": {
                     mean: 43.62,
                     stdDev: 10.87
@@ -253,7 +253,7 @@ const handleType = {
                     stdDev: 7.24
                 }
             },
-            "5.0 diameter": {
+            "5.0 inch diameter": {
                 "Male": {
                     mean: 60.82,
                     stdDev: 16.42
@@ -265,7 +265,7 @@ const handleType = {
             }
         },
         "Smooth": {
-            "0.125 diameter": {
+            "0.125 inch diameter": {
                 "Male": {
                     mean: 0.19,
                     stdDev: 0.10
@@ -275,7 +275,7 @@ const handleType = {
                     stdDev: 0.06
                 }
             },
-            "0.25 diameter": {
+            "0.25 inch diameter": {
                 "Male": {
                     mean: 0.52,
                     stdDev: 0.20
@@ -285,7 +285,7 @@ const handleType = {
                     stdDev: 0.13
                 }
             },
-            "0.5 diameter": {
+            "0.5 inch diameter": {
                 "Male": {
                     mean: 1.36,
                     stdDev: 0.48
@@ -295,7 +295,7 @@ const handleType = {
                     stdDev: 0.32
                 }
             },
-            "0.75 diameter": {
+            "0.75 inch diameter": {
                 "Male": {
                     mean: 2.49,
                     stdDev: 0.66
@@ -305,7 +305,7 @@ const handleType = {
                     stdDev: 0.44
                 }
             },
-            "1.0 diameter": {
+            "1.0 inch diameter": {
                 "Male": {
                     mean: 3.69,
                     stdDev: 1.33
@@ -315,7 +315,7 @@ const handleType = {
                     stdDev: 0.89
                 }
             },
-            "1.5 diameter": {
+            "1.5 inch diameter": {
                 "Male": {
                     mean: 6.09,
                     stdDev: 1.65
@@ -325,7 +325,7 @@ const handleType = {
                     stdDev: 1.10
                 }
             },
-            "2.0 diameter": {
+            "2.0 inch diameter": {
                 "Male": {
                     mean: 9.25,
                     stdDev: 2.92
@@ -335,7 +335,7 @@ const handleType = {
                     stdDev: 1.95
                 }
             },
-            "3.0 diameter": {
+            "3.0 inch diameter": {
                 "Male": {
                     mean: 16.69,
                     stdDev: 5.07
@@ -345,7 +345,7 @@ const handleType = {
                     stdDev: 3.38
                 }
             },
-            "4.0 diameter": {
+            "4.0 inch diameter": {
                 "Male": {
                     mean: 28.38,
                     stdDev: 8.45
@@ -355,7 +355,7 @@ const handleType = {
                     stdDev: 5.63
                 }
             },
-            "5.0 diameter": {
+            "5.0 inch diameter": {
                 "Male": {
                     mean: 44.77,
                     stdDev: 14.11
@@ -370,7 +370,7 @@ const handleType = {
     "Regular Screwdriver": {
         "Right": {
             "Counter-clockwise": {
-                "Palm-down (60 Pronated)": {
+                "Palm-down (60 degrees Pronated)": {
                     "Male": {
                         mean: 18.19,
                         stdDev: 5.64
@@ -390,7 +390,7 @@ const handleType = {
                         stdDev: 4.26
                     }
                 },
-                "Palm-up (60 Supinated)": {
+                "Palm-up (60 degrees Supinated)": {
                     "Male": {
                         mean: 44.26,
                         stdDev: 9.14
@@ -402,7 +402,7 @@ const handleType = {
                 }
             },
             "Clockwise": {
-                "Palm-down (60 Pronated)": {
+                "Palm-down (60 degrees Pronated)": {
                     "Male": {
                         mean: 46.19,
                         stdDev: 13.08
@@ -422,7 +422,7 @@ const handleType = {
                         stdDev: 6.29
                     }
                 },
-                "Palm-up (60 Supinated)": {
+                "Palm-up (60 degrees Supinated)": {
                     "Male": {
                         mean: 36.52,
                         stdDev: 12.15
@@ -436,7 +436,7 @@ const handleType = {
         },
         "Left": {
             "Clockwise": {
-                "Palm-down (60 Pronated)": {
+                "Palm-down (60 degrees Pronated)": {
                     "Male": {
                         mean: 18.19,
                         stdDev: 5.64
@@ -456,7 +456,7 @@ const handleType = {
                         stdDev: 4.26
                     }
                 },
-                "Palm-up (60 Supinated)": {
+                "Palm-up (60 degrees Supinated)": {
                     "Male": {
                         mean: 44.26,
                         stdDev: 9.14
@@ -468,7 +468,7 @@ const handleType = {
                 }
             },
             "Counter-clockwise": {
-                "Palm-down (60 Pronated)": {
+                "Palm-down (60 degrees Pronated)": {
                     "Male": {
                         mean: 46.19,
                         stdDev: 13.08
@@ -488,7 +488,7 @@ const handleType = {
                         stdDev: 6.29
                     }
                 },
-                "Palm-up (60 Supinated)": {
+                "Palm-up (60 degrees Supinated)": {
                     "Male": {
                         mean: 36.52,
                         stdDev: 12.15
@@ -504,7 +504,7 @@ const handleType = {
     "Pistol Grip Screwdriver": {
         "Right": {
             "Counter-clockwise": {
-                "Palm-down (60 Pronated)": {
+                "Palm-down (60 degrees Pronated)": {
                     "Male": {
                         mean: 31.42,
                         stdDev: 17.36
@@ -524,7 +524,7 @@ const handleType = {
                         stdDev: 12.54
                     }
                 },
-                "Palm-up (60 Supinated)": {
+                "Palm-up (60 degrees Supinated)": {
                     "Male": {
                         mean: 103.64,
                         stdDev: 24.84
@@ -536,7 +536,7 @@ const handleType = {
                 }
             },
             "Clockwise": {
-                "Palm-down (60 Pronated)": {
+                "Palm-down (60 degrees Pronated)": {
                     "Male": {
                         mean: 105.37,
                         stdDev: 26.76
@@ -556,7 +556,7 @@ const handleType = {
                         stdDev: 10.12
                     }
                 },
-                "Palm-up (60 Supinated)": {
+                "Palm-up (60 degrees Supinated)": {
                     "Male": {
                         mean: 52.90,
                         stdDev: 19.48
@@ -570,7 +570,7 @@ const handleType = {
         },
         "Left": {
             "Clockwise": {
-                "Palm-down (60 Pronated)": {
+                "Palm-down (60 degrees Pronated)": {
                     "Male": {
                         mean: 31.42,
                         stdDev: 17.36
@@ -590,7 +590,7 @@ const handleType = {
                         stdDev: 12.54
                     }
                 },
-                "Palm-up (60 Supinated)": {
+                "Palm-up (60 degrees Supinated)": {
                     "Male": {
                         mean: 103.64,
                         stdDev: 24.84
@@ -602,7 +602,7 @@ const handleType = {
                 }
             },
             "Counter-clockwise": {
-                "Palm-down (60 Pronated)": {
+                "Palm-down (60 degrees Pronated)": {
                     "Male": {
                         mean: 105.37,
                         stdDev: 26.76
@@ -622,7 +622,7 @@ const handleType = {
                         stdDev: 10.12
                     }
                 },
-                "Palm-up (60 Supinated)": {
+                "Palm-up (60 degrees Supinated)": {
                     "Male": {
                         mean: 52.90,
                         stdDev: 19.48
@@ -637,7 +637,7 @@ const handleType = {
     },
     "T-Handle": {
         "Right": {
-            "Elbow Angle 180": {
+            "Elbow Angle 180 degrees": {
                 "Counter-clockwise": {
                     "Palm-down (75% Range of Motion)": {
                         "Male": {
@@ -703,7 +703,7 @@ const handleType = {
                     }
                 }
             },
-            "Elbow Angle 135": {
+            "Elbow Angle 135 degrees": {
                 "Counter-clockwise": {
                     "Palm-down (75% Range of Motion)": {
                         "Male": {
@@ -769,7 +769,7 @@ const handleType = {
                     }
                 }
             },
-            "Elbow Angle 90": {
+            "Elbow Angle 90 degrees": {
                 "Counter-clockwise": {
                     "Palm-down (75% Range of Motion)": {
                         "Male": {
@@ -835,7 +835,7 @@ const handleType = {
                     }
                 }
             },
-            "Elbow Angle 45": {
+            "Elbow Angle 45 degrees": {
                 "Counter-clockwise": {
                     "Palm-down (75% Range of Motion)": {
                         "Male": {
@@ -903,7 +903,7 @@ const handleType = {
             }
         },
         "Left": {
-            "Elbow Angle 180": {
+            "Elbow Angle 180 degrees": {
                 "Clockwise": {
                     "Palm-down (75% Range of Motion)": {
                         "Male": {
@@ -969,7 +969,7 @@ const handleType = {
                     }
                 }
             },
-            "Elbow Angle 135": {
+            "Elbow Angle 135 degrees": {
                 "Clockwise": {
                     "Palm-down (75% Range of Motion)": {
                         "Male": {
@@ -1035,7 +1035,7 @@ const handleType = {
                     }
                 }
             },
-            "Elbow Angle 90": {
+            "Elbow Angle 90 degrees": {
                 "Clockwise": {
                     "Palm-down (75% Range of Motion)": {
                         "Male": {
@@ -1101,7 +1101,7 @@ const handleType = {
                     }
                 }
             },
-            "Elbow Angle 45": {
+            "Elbow Angle 45 degrees": {
                 "Clockwise": {
                     "Palm-down (75% Range of Motion)": {
                         "Male": {
@@ -1169,7 +1169,274 @@ const handleType = {
             }
         }
     },
-
-
-    "Cylindrical Handle": {}
+    "Cylindrical Handle": {
+        "Right": {
+            "Smooth": {
+                "Outward": {
+                    "1.8 inch diameter": {
+                        "Male": {
+                            mean: 55.76,
+                            stdDev: 20.36
+                        },
+                        "Female": {
+                            mean: 20.36,
+                            stdDev: 13.28
+                        }
+                    },
+                    "2.3 inch diameter": {
+                        "Male": {
+                            mean: 46.91,
+                            stdDev: 11.51
+                        },
+                        "Female": {
+                            mean: 19.47,
+                            stdDev: 13.28
+                        }
+                    },
+                    "3.3 inch diameter": {
+                        "Male": {
+                            mean: 43.37,
+                            stdDev: 18.59
+                        },
+                        "Female": {
+                            mean: 21.24,
+                            stdDev: 12.39
+                        }
+                    }
+                },
+                "Inward": {
+                    "1.8 inch diameter": {
+                        "Male": {
+                            mean: 61.96,
+                            stdDev: 23.90
+                        },
+                        "Female": {
+                            mean: 25.67,
+                            stdDev: 22.13
+                        }
+                    },
+                    "2.3 inch diameter": {
+                        "Male": {
+                            mean: 63.73,
+                            stdDev: 15.05
+                        },
+                        "Female": {
+                            mean: 26.67,
+                            stdDev: 22.13
+                        }
+                    },
+                    "3.3 inch diameter": {
+                        "Male": {
+                            mean: 53.10,
+                            stdDev: 16.82
+                        },
+                        "Female": {
+                            mean: 20.36,
+                            stdDev: 17.70
+                        }
+                    }
+                }
+            },
+            "Knurled": {
+                "Outward": {
+                    "1.8 inch diameter": {
+                        "Male": {
+                            mean: 63.73,
+                            stdDev: 23.01
+                        },
+                        "Female": {
+                            mean: 23.01,
+                            stdDev: 15.05
+                        }
+                    },
+                    "2.3 inch diameter": {
+                        "Male": {
+                            mean: 53.99,
+                            stdDev: 13.28
+                        },
+                        "Female": {
+                            mean: 22.13,
+                            stdDev: 15.05
+                        }
+                    },
+                    "3.3 inch diameter": {
+                        "Male": {
+                            mean: 49.56,
+                            stdDev: 21.24
+                        },
+                        "Female": {
+                            mean: 24.78,
+                            stdDev: 14.16
+                        }
+                    }
+                },
+                "Inward": {
+                    "1.8 inch diameter": {
+                        "Male": {
+                            mean: 71.69,
+                            stdDev: 27.44
+                        },
+                        "Female": {
+                            mean: 29.21,
+                            stdDev: 25.67
+                        }
+                    },
+                    "2.3 inch diameter": {
+                        "Male": {
+                            mean: 73.46,
+                            stdDev: 17.70
+                        },
+                        "Female": {
+                            mean: 29.21,
+                            stdDev: 25.67
+                        }
+                    },
+                    "3.3 inch diameter": {
+                        "Male": {
+                            mean: 61.07,
+                            stdDev: 19.47
+                        },
+                        "Female": {
+                            mean: 23.01,
+                            stdDev: 20.36
+                        }
+                    }
+                }
+            }
+        },
+        "Left": {
+            "Smooth": {
+                "Outward": {
+                    "1.8 inch diameter": {
+                        "Male": {
+                            mean: 55.76,
+                            stdDev: 20.36
+                        },
+                        "Female": {
+                            mean: 20.36,
+                            stdDev: 13.28
+                        }
+                    },
+                    "2.3 inch diameter": {
+                        "Male": {
+                            mean: 46.91,
+                            stdDev: 11.51
+                        },
+                        "Female": {
+                            mean: 19.47,
+                            stdDev: 13.28
+                        }
+                    },
+                    "3.3 inch diameter": {
+                        "Male": {
+                            mean: 43.37,
+                            stdDev: 18.59
+                        },
+                        "Female": {
+                            mean: 21.24,
+                            stdDev: 12.39
+                        }
+                    }
+                },
+                "Inward": {
+                    "1.8 inch diameter": {
+                        "Male": {
+                            mean: 61.96,
+                            stdDev: 23.90
+                        },
+                        "Female": {
+                            mean: 25.67,
+                            stdDev: 22.13
+                        }
+                    },
+                    "2.3 inch diameter": {
+                        "Male": {
+                            mean: 63.73,
+                            stdDev: 15.05
+                        },
+                        "Female": {
+                            mean: 25.67,
+                            stdDev: 22.13
+                        }
+                    },
+                    "3.3 inch diameter": {
+                        "Male": {
+                            mean: 53.10,
+                            stdDev: 16.82
+                        },
+                        "Female": {
+                            mean: 20.36,
+                            stdDev: 17.70
+                        }
+                    }
+                }
+            },
+            "Knurled": {
+                "Outward": {
+                    "1.8 inch diameter": {
+                        "Male": {
+                            mean: 63.73,
+                            stdDev: 23.01
+                        },
+                        "Female": {
+                            mean: 23.01,
+                            stdDev: 15.05
+                        }
+                    },
+                    "2.3 inch diameter": {
+                        "Male": {
+                            mean: 53.99,
+                            stdDev: 13.28
+                        },
+                        "Female": {
+                            mean: 22.13,
+                            stdDev: 15.05
+                        }
+                    },
+                    "3.3 inch diameter": {
+                        "Male": {
+                            mean: 49.56,
+                            stdDev: 21.24
+                        },
+                        "Female": {
+                            mean: 24.78,
+                            stdDev: 14.16
+                        }
+                    }
+                },
+                "Inward": {
+                    "1.8 inch diameter": {
+                        "Male": {
+                            mean: 71.69,
+                            stdDev: 27.44
+                        },
+                        "Female": {
+                            mean: 29.21,
+                            stdDev: 25.67
+                        }
+                    },
+                    "2.3 inch diameter": {
+                        "Male": {
+                            mean: 73.46,
+                            stdDev: 17.70
+                        },
+                        "Female": {
+                            mean: 29.21,
+                            stdDev: 25.67
+                        }
+                    },
+                    "3.3 inch diameter": {
+                        "Male": {
+                            mean: 61.07,
+                            stdDev: 19.47
+                        },
+                        "Female": {
+                            mean: 23.01,
+                            stdDev: 20.36
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
