@@ -18,7 +18,7 @@
 
 */
 
-const handleTypesObject = {
+const handleTypes = {
     "Key": {
         "Male": {
             mean: 36.72,
@@ -1646,16 +1646,13 @@ function createTasks(input) {
         femaleMean = 0;
         femaleStdDev = 0;
         
-        findValues(handleTypesObject, input[i].handleType, input[i].modifiers, input[i].hand)
-
-        // console.log("The current male mean value = " + maleMean)
+        findValues(handleTypes[input[i].handleType], input[i].handleType, input[i].modifiers, input[i].hand)
 
         if (maleMean === null || maleStdDev === null || femaleMean === null || femaleStdDev === null) {
             console.log("Could not calculate one of the mean or standard deviation values for task number " + (i+1) + ".")
             console.log("Check the modifiers entered for this task and try again.\n")
         } else if (maleMean === 0 || maleStdDev === 0 || femaleMean === 0 || femaleStdDev === 0) {
             console.log("The handle type entered for task number " + (i+1) + " is invalid.\n")
-            // console.log("The current handle type value = " + input[i].handleType)
         } else {
             outputArray.push(makeOutput(i, input, maleMean, maleStdDev, femaleMean, femaleStdDev))
         }
@@ -1665,82 +1662,80 @@ function createTasks(input) {
     return outputArray;
 };
 
-function findValues(handleTypes, force, modifiers, hand) {
+function findValues(force, handleType, modifiers, hand) {
 
-    switch (force) {
+    switch (handleType) {
         case 'Key':
-            maleMean = handleTypes[force]["Male"].mean
-            maleStdDev = handleTypes[force]["Male"].stdDev
-            femaleMean = handleTypes[force]["Female"].mean
-            femaleStdDev = handleTypes[force]["Female"].stdDev
-
-            // console.log("Male mean value = " + maleMean)
+            maleMean = force["Male"].mean
+            maleStdDev = force["Male"].stdDev
+            femaleMean = force["Female"].mean
+            femaleStdDev = force["Female"].stdDev
             break
         case 'Door Knob':
-            maleMean = handleTypes[force]["Male"].mean
-            maleStdDev = handleTypes[force]["Male"].stdDev
-            femaleMean = handleTypes[force]["Female"].mean
-            femaleStdDev = handleTypes[force]["Female"].stdDev
+            maleMean = force["Male"].mean
+            maleStdDev = force["Male"].stdDev
+            femaleMean = force["Female"].mean
+            femaleStdDev = force["Female"].stdDev
             break
         case 'L-Shaped':
-            maleMean = handleTypes[force][hand][modifiers[0]]["Male"].mean
-            maleStdDev = handleTypes[force][hand][modifiers[0]]["Male"].stdDev
-            femaleMean = handleTypes[force][hand][modifiers[0]]["Female"].mean
-            femaleStdDev = handleTypes[force][hand][modifiers[0]]["Female"].stdDev
+            maleMean = force[hand][modifiers[0]]["Male"].mean
+            maleStdDev = force[hand][modifiers[0]]["Male"].stdDev
+            femaleMean = force[hand][modifiers[0]]["Female"].mean
+            femaleStdDev = force[hand][modifiers[0]]["Female"].stdDev
             break
         case 'Ridged Knob':
-            maleMean = handleTypes[force]["Male"].mean
-            maleStdDev = handleTypes[force]["Male"].stdDev
-            femaleMean = handleTypes[force]["Female"].mean
-            femaleStdDev = handleTypes[force]["Female"].stdDev
+            maleMean = force["Male"].mean
+            maleStdDev = force["Male"].stdDev
+            femaleMean = force["Female"].mean
+            femaleStdDev = force["Female"].stdDev
             break
         case 'Tap':
-            maleMean = handleTypes[force]["Male"].mean
-            maleStdDev = handleTypes[force]["Male"].stdDev
-            femaleMean = handleTypes[force]["Female"].mean
-            femaleStdDev = handleTypes[force]["Female"].stdDev
+            maleMean = force["Male"].mean
+            maleStdDev = force["Male"].stdDev
+            femaleMean = force["Female"].mean
+            femaleStdDev = force["Female"].stdDev
             break
         case 'Wing Nut':
-            maleMean = handleTypes[force]["Male"].mean
-            maleStdDev = handleTypes[force]["Male"].stdDev
-            femaleMean = handleTypes[force]["Female"].mean
-            femaleStdDev = handleTypes[force]["Female"].stdDev
+            maleMean = force["Male"].mean
+            maleStdDev = force["Male"].stdDev
+            femaleMean = force["Female"].mean
+            femaleStdDev = force["Female"].stdDev
             break
         case 'Jar Lid':
-            maleMean = handleTypes[force][modifiers[0]][modifiers[1]]["Male"].mean
-            maleStdDev = handleTypes[force][modifiers[0]][modifiers[1]]["Male"].stdDev
-            femaleMean = handleTypes[force][modifiers[0]][modifiers[1]]["Female"].mean
-            femaleStdDev = handleTypes[force][modifiers[0]][modifiers[1]]["Female"].stdDev
+            maleMean = force[modifiers[0]][modifiers[1]]["Male"].mean
+            maleStdDev = force[modifiers[0]][modifiers[1]]["Male"].stdDev
+            femaleMean = force[modifiers[0]][modifiers[1]]["Female"].mean
+            femaleStdDev = force[modifiers[0]][modifiers[1]]["Female"].stdDev
             break
         case 'Round Knob':
-            maleMean = handleTypes[force][modifiers[0]][modifiers[1]]["Male"].mean
-            maleStdDev = handleTypes[force][modifiers[0]][modifiers[1]]["Male"].stdDev
-            femaleMean = handleTypes[force][modifiers[0]][modifiers[1]]["Female"].mean
-            femaleStdDev = handleTypes[force][modifiers[0]][modifiers[1]]["Female"].stdDev
+            maleMean = force[modifiers[0]][modifiers[1]]["Male"].mean
+            maleStdDev = force[modifiers[0]][modifiers[1]]["Male"].stdDev
+            femaleMean = force[modifiers[0]][modifiers[1]]["Female"].mean
+            femaleStdDev = force[modifiers[0]][modifiers[1]]["Female"].stdDev
             break
         case 'Regular Screwdriver':
-            maleMean = handleTypes[force][hand][modifiers[0]][modifiers[1]]["Male"].mean
-            maleStdDev = handleTypes[force][hand][modifiers[0]][modifiers[1]]["Male"].stdDev
-            femaleMean = handleTypes[force][hand][modifiers[0]][modifiers[1]]["Female"].mean
-            femaleStdDev = handleTypes[force][hand][modifiers[0]][modifiers[1]]["Female"].stdDev
+            maleMean = force[hand][modifiers[0]][modifiers[1]]["Male"].mean
+            maleStdDev = force[hand][modifiers[0]][modifiers[1]]["Male"].stdDev
+            femaleMean = force[hand][modifiers[0]][modifiers[1]]["Female"].mean
+            femaleStdDev = force[hand][modifiers[0]][modifiers[1]]["Female"].stdDev
             break
         case 'Pistol Grip Screwdriver':
-            maleMean = handleTypes[force][hand][modifiers[0]][modifiers[1]]["Male"].mean
-            maleStdDev = handleTypes[force][hand][modifiers[0]][modifiers[1]]["Male"].stdDev
-            femaleMean = handleTypes[force][hand][modifiers[0]][modifiers[1]]["Female"].mean
-            femaleStdDev = handleTypes[force][hand][modifiers[0]][modifiers[1]]["Female"].stdDev
+            maleMean = force[hand][modifiers[0]][modifiers[1]]["Male"].mean
+            maleStdDev = force[hand][modifiers[0]][modifiers[1]]["Male"].stdDev
+            femaleMean = force[hand][modifiers[0]][modifiers[1]]["Female"].mean
+            femaleStdDev = force[hand][modifiers[0]][modifiers[1]]["Female"].stdDev
             break
         case 'T-Handle':
-            maleMean = handleTypes[force][hand][modifiers[0]][modifiers[1]][modifiers[2]]["Male"].mean
-            maleStdDev = handleTypes[force][hand][modifiers[0]][modifiers[1]][modifiers[2]]["Male"].stdDev
-            femaleMean = handleTypes[force][hand][modifiers[0]][modifiers[1]][modifiers[2]]["Female"].mean
-            femaleStdDev = handleTypes[force][hand][modifiers[0]][modifiers[1]][modifiers[2]]["Female"].stdDev
+            maleMean = force[hand][modifiers[0]][modifiers[1]][modifiers[2]]["Male"].mean
+            maleStdDev = force[hand][modifiers[0]][modifiers[1]][modifiers[2]]["Male"].stdDev
+            femaleMean = force[hand][modifiers[0]][modifiers[1]][modifiers[2]]["Female"].mean
+            femaleStdDev = force[hand][modifiers[0]][modifiers[1]][modifiers[2]]["Female"].stdDev
             break
         case 'Cylindrical Handle':
-            maleMean = handleTypes[force][hand][modifiers[0]][modifiers[1]][modifiers[2]]["Male"].mean
-            maleStdDev = handleTypes[force][hand][modifiers[0]][modifiers[1]][modifiers[2]]["Male"].stdDev
-            femaleMean = handleTypes[force][hand][modifiers[0]][modifiers[1]][modifiers[2]]["Female"].mean
-            femaleStdDev = handleTypes[force][hand][modifiers[0]][modifiers[1]][modifiers[2]]["Female"].stdDev
+            maleMean = force[hand][modifiers[0]][modifiers[1]][modifiers[2]]["Male"].mean
+            maleStdDev = force[hand][modifiers[0]][modifiers[1]][modifiers[2]]["Male"].stdDev
+            femaleMean = force[hand][modifiers[0]][modifiers[1]][modifiers[2]]["Female"].mean
+            femaleStdDev = force[hand][modifiers[0]][modifiers[1]][modifiers[2]]["Female"].stdDev
             break
         default:
     }
